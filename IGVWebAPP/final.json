@@ -1,0 +1,71 @@
+{
+ "reference": {
+ "id": "hg19",
+"name": "Human (CRCh37/hg19)",
+"fastaURL": "https://s3.dualstack.us-east-1.amazonaws.com/igv.broadinstitute.org/genomes/seq/hg19/hg19.fasta",
+"indexURL": "https://s3.dualstack.us-east-1.amazonaws.com/igv.broadinstitute.org/genomes/seq/hg19/hg19.fasta.fai",
+"cytobandURL": "https://s3.dualstack.us-east-1.amazonaws.com/igv.broadinstitute.org/genomes/seq/hg19/cytoBand.txt" 
+},
+"locus": "all",
+"tracks": [
+ {
+ "type": "sequence",
+"order": -1.797693e+308,
+"noSpinner": true 
+},
+{
+ "name": "Refseq Genes",
+"format": "refgene",
+"url": "https://s3.dualstack.us-east-1.amazonaws.com/igv.org.genomes/hg19/refGene.sorted.txt.gz",
+"indexURL": "https://s3.dualstack.us-east-1.amazonaws.com/igv.org.genomes/hg19/refGene.sorted.txt.gz.tbi",
+"visibilityWindow":       -1,
+"removable": false,
+"order":  1000000,
+"noSpinner": true,
+"filename": "refGene.sorted.txt.gz",
+"sourceType": "file",
+"type": "annotation",
+"maxRows":      500,
+"filterTypes": [ "chromosome", "gene" ] 
+},
+{
+ "name": "D0_skhds",
+"filename": null,
+"format": "bigwig",
+"url": "gs://any_bucket_nameany_dir_pathNA",
+"sourceType": "file",
+"type": "wig",
+"noSpinner": true,
+"color": "rgb(150,150,150)",
+"height":       50,
+"autoscale": true,
+"order": 1 
+},
+{
+ "name": "D0_fdfdfdf",
+"filename": null,
+"format": "bigwig",
+"url": "gs://any_bucket_nameany_dir_pathNA",
+"sourceType": "file",
+"type": "wig",
+"noSpinner": true,
+"color": "rgb(150,150,150)",
+"height":       50,
+"autoscale": true,
+"order": 2 
+},
+{
+ "name": "D3_gfgf",
+"filename": null,
+"format": "bigwig",
+"url": "gs://any_bucket_nameany_dir_pathNA",
+"sourceType": "file",
+"type": "wig",
+"noSpinner": true,
+"color": "rgb(150,150,150)",
+"height":       50,
+"autoscale": true,
+"order": 3 
+} 
+] 
+}

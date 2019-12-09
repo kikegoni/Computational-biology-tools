@@ -1,0 +1,4 @@
+Library,ID,type,url
+l1,D0_skhds,bigWig,file1.bigwig
+l2,D0_fdfdfdf,bigWig,File2.bigwig
+l3,D3_gfgf,bigWig,File3.bigwig
