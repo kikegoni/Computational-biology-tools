@@ -10,6 +10,8 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  &nbsp;&nbsp;&nbsp;&nbsp;* Download the *enviroment.yml*  
  &nbsp;&nbsp;&nbsp;&nbsp;* Create the environment: ``` conda env create -f environment.yml --name scATAC_bigwigs```   
  
+3) Use it in **STILETTO**. Due to compatibitilies with the VNCserver
+ 
  ## The *sh* file  
  
  This is the script that has t bu run. It is run by:  
@@ -34,8 +36,10 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  
  2) Download the *generate_generic_bigwigs.sh*.  
  
- 3) ``` sh generate_generic_bigwigs.sh $SC_DIRECTORY ```
+ 3) ``` sh generate_generic_bigwigs.sh $SC_DIRECTORY ```  
 
  
- 
+## Visualize the bigwigs with IGV-VNC
+
+Please, refer to the VNC guide:
  
