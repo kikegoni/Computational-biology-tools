@@ -10,22 +10,23 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  &nbsp;&nbsp;&nbsp;&nbsp;* Download the *enviroment.yml*  
  &nbsp;&nbsp;&nbsp;&nbsp;* Create the environment: ``` conda env create -f environment.yml --name scATAC_bigwigs```   
  
- ## The sh file  
+ ## The *sh* file  
  
  This is the script that has t bu run. It is run by:  
- ```console
+ ```
  sh generate_generic_bigwigs.sh $SC_DIRECTORY
- ```  
+ ```
+   
  Where:  
  
  **SC_directory** : Path to the scATACseq directory (Mandatory)   
  
  Some parameters in the *sh* script **can also be optionally modified** by the user:  
- **ANNOTATION_FILE** (Line 7) : CSV file that assign each barcode to one cluster (default: *$SC_DIRECTORY/outs/analysis/clustering/graphclust/clusters.csv*).  
- **BAM_FILE** (Line 8) :  The bam file with all the alignments that we are going to slip in N clusters (default: *$SC_DIRECTORY/outs/possorted_bam.bam*).  
- **PEAKS_FILE** (Line 9) : The bed file with the coordinates of the peaks of the experiment (default: *$SC_DIRECTORY/outs/peaks.bed*).
+ &nbsp;&nbsp;-**ANNOTATION_FILE** (Line 7) : CSV file that assign each barcode to one cluster (default: *$SC_DIRECTORY/outs/analysis/clustering/graphclust/clusters.csv*).  
+ &nbsp;&nbsp;-**BAM_FILE** (Line 8) :  The bam file with all the alignments that we are going to slip in N clusters (default: *$SC_DIRECTORY/outs/possorted_bam.bam*).  
+  &nbsp;&nbsp;-**PEAKS_FILE** (Line 9) : The bed file with the coordinates of the peaks of the experiment (default: *$SC_DIRECTORY/outs/peaks.bed*).
  Designed according the default [cell ranger count](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview) structure.  
- *The number of cores in the bamCoverage can also be changed (Line 37, parameter p). Default: 4*.  
+  &nbsp;&nbsp;-*The number of cores in the bamCoverage can also be changed (Line 37, parameter p). Default: 4*.  
  
  ## Run the script
  
