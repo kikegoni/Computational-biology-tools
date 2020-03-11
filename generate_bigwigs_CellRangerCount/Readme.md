@@ -7,4 +7,4 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
 1) Install [Conda] (https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)  
 
 2) Get the conda environment:   
-* this is the first level of bullet points, made up of <space><space>*<space>
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this is the first level of bullet points, made up of <space><space>*<space>
