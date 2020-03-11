@@ -12,7 +12,10 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  
 3) Use it in **STILETTO**. Due to compatibitilies with the VNCserver
  
+  &nbsp;
+  
  ## The *sh* file  
+ 
  
  This is the script that has t bu run. It is run by:  
  ```
@@ -30,7 +33,10 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
      
   &nbsp;&nbsp;&nbsp;&nbsp;-*The number of cores in the bamCoverage can also be changed (Line 37, parameter p). Default: 4*.  
  
+ &nbsp;
+ 
  ## Run the script
+ 
  
  1) Activate the conda environment: ``` conda activate scATAC_bigwigs```  
  
@@ -38,7 +44,8 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  
  3) ``` sh generate_generic_bigwigs.sh $SC_DIRECTORY ```  
 
- 
+  &nbsp;
+  
 ## Visualize the bigwigs with IGV-VNC
 
 Please, refer to the VNC guide:
