@@ -50,5 +50,5 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
   
 ## Visualize the bigwigs with IGV-VNC
 
-Please, refer to the VNC guide:
+Please, refer to the [VNC guide](https://github.com/kikegoni/Computational-biology-tools/blob/master/VNCServer_setup.md):
  
