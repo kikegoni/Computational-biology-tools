@@ -1,10 +1,10 @@
-# Generate bigwigs for cell ranger count output   
+# What  is the purpose of this tool?   
 
-From the output files of cell ranger count, it splits the bam file (possorted) in *N* sub-bamfiles for each *N* original cluster (each cluster has several barcodes). Then intersect that with the peaks (bed) and creates a bigwig for each cluster to see the coverage per track.  
+This tool creates bigWigs from pseudobulk reads for each cluster called by CellRanger. For this the tool automatically, splits the bam file (possorted.bam) into *n* (*n*=number of clusters) bamfiles with the reads associated with each cluster. In the process it will remove any reads not associated with cell/nuclei barcodes (i.e. barcodes associated with empty droplets) and reads that are not falling into peaks. 
 
  &nbsp;
  
-## Software requirements  
+## Software installation 
 
 1) Install [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)  
 
@@ -16,10 +16,10 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  
   &nbsp;
   
- ## The *sh* file  
+ ## Parameters for the tool
  
  
- This is the script that has t bu run. It is run by:  
+ To run the tool simply run the following command and replace the $SC_DIRECTORY with the location of your CellRanger output:  
  ```
  sh generate_generic_bigwigs.sh $SC_DIRECTORY
  ```
@@ -37,7 +37,7 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  
  &nbsp;
  
- ## Run the script
+ ## Running the tool
  
  
  1) Activate the conda environment: ``` conda activate scATAC_bigwigs```  
@@ -48,7 +48,9 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
 
   &nbsp;
   
-## Visualize the bigwigs with IGV-VNC
+## Output
+  
+## Visualize the bigWigs with IGV-VNC
 
 Refer to the [VNC guide](https://github.com/kikegoni/Computational-biology-tools/blob/master/VNCServer_setup.md):
  
