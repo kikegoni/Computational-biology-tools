@@ -1,8 +1,8 @@
-## Set up the VNC and open IGV on it. 
+# Set up the VNC and open IGV on it. 
 
  &nbsp;
  
-# Requirements to be done only the first time:  
+## Requirements to be done only the first time:  
 In Stiletto:   
    
 1)) Set the [VNCserver](https://davetang.github.io/listerlab/vnc.html):  
@@ -39,7 +39,7 @@ metacity &
 
 &nbsp;
 
-# Launch VNC
+## Launch VNC
 
 In stiletto:  
 
@@ -71,7 +71,7 @@ Tip: In the VNCViewer session right-click>Properties>Options and set Picture qua
 
 &nbsp;
 
-# Open IGV  
+## Open IGV  
 
 In the VNCViewer terminal:  
 
@@ -82,7 +82,7 @@ In the VNCViewer terminal:
 
 &nbsp;
 
-# After closing VNC Viewer  
+## After closing VNC Viewer  
 
 Remember to close IN stiletto the VNCserver port and to kill the .logs file 
 ```console
