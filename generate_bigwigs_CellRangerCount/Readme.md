@@ -22,11 +22,11 @@ From the output files of cell ranger count, it splits the bam file (possorted) i
  **SC_directory** : Path to the scATACseq directory (Mandatory). Paths according to the default [cell ranger count](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview) structure.
  
  Some parameters in the *sh* script **can also be optionally modified** by the user:  
- &nbsp;&nbsp;-**ANNOTATION_FILE** (Line 7) : CSV file that assign each barcode to one cluster (default: *$SC_DIRECTORY/outs/analysis/clustering/graphclust/clusters.csv*).  
- &nbsp;&nbsp;-**BAM_FILE** (Line 8) :  The bam file with all the alignments that we are going to slip in N clusters (default: *$SC_DIRECTORY/outs/possorted_bam.bam*).  
-  &nbsp;&nbsp;-**PEAKS_FILE** (Line 9) : The bed file with the coordinates of the peaks of the experiment (default: *$SC_DIRECTORY/outs/peaks.bed*).    
+ &nbsp;&nbsp;&nbsp;&nbsp;-**ANNOTATION_FILE** (Line 7) : CSV file that assign each barcode to one cluster (default: *$SC_DIRECTORY/outs/analysis/clustering/graphclust/clusters.csv*).  
+ &nbsp;&nbsp;&nbsp;&nbsp;-**BAM_FILE** (Line 8) :  The bam file with all the alignments that we are going to slip in N clusters (default: *$SC_DIRECTORY/outs/possorted_bam.bam*).  
+ &nbsp;&nbsp;&nbsp;&nbsp;-**PEAKS_FILE** (Line 9) : The bed file with the coordinates of the peaks of the experiment (default: *$SC_DIRECTORY/outs/peaks.bed*).    
      
-  &nbsp;&nbsp;-*The number of cores in the bamCoverage can also be changed (Line 37, parameter p). Default: 4*.  
+  &nbsp;&nbsp;&nbsp;&nbsp;-*The number of cores in the bamCoverage can also be changed (Line 37, parameter p). Default: 4*.  
  
  ## Run the script
  
