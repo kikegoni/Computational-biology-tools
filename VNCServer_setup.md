@@ -1,4 +1,4 @@
-# Set up the VNC and open IGV on it. 
+# Set up the VNC and open IGV. 
 
  &nbsp;
  
