@@ -48,7 +48,10 @@ This tool creates bigWigs from pseudobulk reads for each cluster called by CellR
 
   &nbsp;
   
-## Output
+## Output  
+
+``` $SC_DIRECTORY/bigwigs``` contains the *n* bigWigs.  
+``` $SC_DIRECTORY/intermediate_files``` contains the *n* bam files, for all the reads and for only reads falling in peaks.
   
 ## Visualize the bigWigs with IGV-VNC
 
