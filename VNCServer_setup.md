@@ -82,7 +82,7 @@ Tip: In the VNCViewer session right-click>Properties>Options and set Picture qua
 In the VNCViewer terminal:  
 
 ```console
-[eecheverria@PEB-SRVNIX-STILETTO ~]$ sh /dd_public/www/listerlab/kike/IGV_Linux_2.8.0/igv.sh  
+[eecheverria@PEB-SRVNIX-STILETTO ~]$ sh /dd_public/www/listerlab/kike/IGV_2.4.9/igv.sh  
 ```   
 **If it's your first time launching IGV in the server change the default directory to avoid occupying too much space at ~/home and save it to any of your workding_data directories.** From the UI. Select "View > Preferences > Advanced and look to the bottom for the option to move the IGV directory.
 
