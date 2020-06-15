@@ -15,7 +15,7 @@ In Stiletto:
 - Edit ~/.vnc/xstartup file:
 
 ```console
-[eecheverria@PEB-SRVNIX-STILETTO ~]$ vim ./vnc/xstartup
+[eecheverria@PEB-SRVNIX-STILETTO ~]$ vim ~/.vnc/xstartup
 ```  
 Delete everything and write this:  
 ```console
@@ -38,7 +38,7 @@ metacity &
 - Give *execute* permission to *xstartup*:   
 
 ```console
-[eecheverria@PEB-SRVNIX-STILETTO ~]$ chmod  u+x ./vnc/xstartup
+[eecheverria@PEB-SRVNIX-STILETTO ~]$ chmod  u+x ~/.vnc/xstartup
 ```  
 
 - Go to your local PC and download [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)   
